@@ -1,0 +1,5 @@
+rooms(id, name, created_at, admin_ids)
+queue(room_id, track_id, added_by, slot, at)
+tracks(id, isrc, title, artist, album, dur_ms, sp_id, yt_id, conf, how)
+plays(room_id, track_id, user_id, offset_ms, listened_ms, at)
+lyrics(track_id, lrc, source, uploaded_by)

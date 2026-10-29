@@ -1,0 +1,6 @@
+npm create cloudflare@latest room -- --type=hello-world
+cd room
+npx wrangler d1 create room
+npx wrangler secret put SPOTIFY_CLIENT_ID
+npx wrangler secret put SPOTIFY_CLIENT_SECRET
+npx wrangler deploy

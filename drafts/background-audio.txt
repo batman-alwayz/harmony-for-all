@@ -1,0 +1,7 @@
+// iOS, in the shell
+try { AVAudioSession.setCategory('playback'); } catch {}
+// app.json: ios.infoPlist.UIBackgroundModes = ["audio"]
+
+// Android foreground service
+startForeground(1, buildNotification(channelId, currentTrack));
+mediaSession.setCallback({ onSkipToNext: voteSkip, onPause: () => bridge.pause() });
